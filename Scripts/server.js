@@ -4,6 +4,6 @@ function Odernalista(parametro){
     return parametro.sort();
 } 
 
-var oderna = Odernalista(list);
 console.log('essa é a lista anterior : ' + list);
+var oderna = Odernalista(list);
 console.log('essa é a lista ordenada : ' + oderna);
