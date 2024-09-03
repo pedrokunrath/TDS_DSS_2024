@@ -1,14 +1,15 @@
-function somar(numero1,numero2,resultado){
-    if (numero1 == undefined || numero2 == undefined){
-        return "os parametros são obrigatorios "
-    }else if (typeof numero1 !== "NUMBER"){
-        return "os parametros 'A' não é numerico"
-    }else if(typeof numero2 !== "NUMBER"){
-        return "os parametros 'B' não é numerico"
+function media(numero1, numero2, numero3) {
+    if (numero1 === undefined || numero2 === undefined) {
+        return "os parametros são obrigatorios ";
+    } else if (typeof numero1 !== "number") {
+        return "os parametros 'A' não é numerico";
+    } else if (typeof numero2 !== "number") {
+        return "os parametros 'B' não é numerico";
     }
-   
-    return numero1 + numero2;
+
+    const soma = numero1 + numero2 + numero3; 
+    return soma / 3;
 }
 
-const resultado = somar(1,2);
+const resultado = media(10, 10, 10);
 console.log(resultado);
